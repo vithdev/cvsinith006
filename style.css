@@ -768,3 +768,22 @@ body.dark-mode footer {
         margin-right: 0.5rem;
     }
 }
+.contact-info-item a {
+    color: var(--text-light);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-info-item a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+/* Dark mode support */
+body.dark-mode .contact-info-item a {
+    color: #bdc1c6;
+}
+
+body.dark-mode .contact-info-item a:hover {
+    color: var(--secondary-color);
+}
